@@ -1,17 +1,21 @@
-Future<Map<String, dynamic>> buscarProducto() async {
+Future<Map<String,Dynamic>> BusccarProducto() async 
+{  
   await Future.delayed(Duration(seconds: 3));
   return {
-    "id": 1,
-    "nombre": "papa Huairo",
-    "stock": 100,
-    "precio": 1.5,
-    "estado": false,
-  };
-}
 
+"id":1,
+"nombre":"papa huiro",
+"stock" :100
+"precio":1.5
+"activo": false
+}
+}
 void main() async {
-  print("buscando producto");
-  Map<String, dynamic> producto = await buscarProducto();
-  print("Nombre: ${producto["nombre"]}*");
-  print("Stock: ${producto["stock"]}*");
+ print ("Buscar Productos");
+Map<String,Dynamic> producto = await BusccarProducto(),
+print("Nombre: ${producto["nombre"]}");
+print("Stock"): ${producto["nombre"]}");
+print("Precio: ${producto["nombre"]}");
+print("Estado Activo: ${producto["nombre"]}");
+
 }
